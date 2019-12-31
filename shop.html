@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ccs/style.css">
+    <link rel="stylesheet" href="ccs/responsive.css">
+    <link rel="stylesheet" href="font-aweasome/fontawesome-free-5.10.2-web/css/all.min.css">
+    <title>Luxury - Restaurante & Café</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-content">
+            <div class="menu-bar">
+                <img src="img/logo.png">
+                <label><i class="fas fa-bars"></i></label>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="foodMenu.html">MENU</a></li>
+                <li><a href="reserva.html">RESERVATION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="shop.html" id="active">SHOP</a></li>
+                <div class="btn-menu">
+                    <a href="reserva.html"><i class="fas fa-utensils"></i> BOOK A TABLE</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+        <div class="page-title">
+            <h1>Shop</h1>
+        </div>
+        <div class="content-pro">
+            <div class="width-content-pro">
+                <div class="row-sort">
+                    <label for="sort-shop-item">Showing all 6 results</label>
+                    <select name="sort-shop-item" id="select">
+                        <option value="0">Default sorting</option>
+                        <option value="1">Sort by popularity</option>
+                        <option value="2">Sort by average rating</option>
+                        <option value="3">Sort by latest</option>
+                        <option value="4">Sort by price: low to high</option>
+                        <option value="5">Sort by price: high to low</option>
+                    </select>
+                </div>
+                <div class="shop-items"><!--produtos do restaurante disponiveis para pedido.-->
+                    
+
+                </div><!--end produtos-->
+            </div>
+            <div class="sedibar">
+                <h2>Shopping Cart</h2>
+                <div class="Shopping-cart-header">
+                    <span class="products-quantity">0</span> <span class="products-in-cart">Product(s) in Cart</span>
+                </div>
+                <ul class="shopping-cart-list">
+
+                </ul>
+                <p class="total-cart"></p>
+                <div class="cart-buttons">
+                    <a href="#0" class="cart-checkout">Checkout<span class="total-price"></span></a>
+                    <a href="#0" class="empty-cart-btn">Empty</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <section id="footer">
+                <div class="colum-1">
+                    <h1>Navigation</h1>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="foodMenu.html">Menu</a></p>
+                    <p><a href="reserva.html">Reservation</a></p>
+                    <p><a href="staff.html">Staff</a></p>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                </div>
+                <div class="colum-2">
+                    <h1>Newsletter</h1>
+                    <p>Enter your email address for our newsletter</p>
+                    <p id="email-sucess"><i class="fas fa-check-circle"></i> Email successfully sent.</p>
+                    <p id="email-error"><i class="fas fa-exclamation-circle"></i> Invalid email, not sent.</i></p>
+                    <form class="newsletter">
+                        <input type="email" id="email" class="email" name="email" placeholder="E-mail Adress..." required>
+                        <input type="submit" id="btn-email" for="email" value="SIGN UP">
+                    </form>
+                    <div class="btn-social">
+                        <a href="#" id="facebook-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" id="twitter-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" id="instagram-btn"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="colum-3">
+                    <h1>Opening Hours</h1>
+                    <div class="days-hours">
+                        <p>Monday</p>
+                        <p>10am - 10pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Tuesday</p>
+                        <p>10am - 10pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Wednesday</p>
+                        <p>10am - 10pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Thursday</p>
+                        <p>10am - 10pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Friday</p>
+                        <p>10am - 10pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Saturday</p>
+                        <p>9am - 11pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                    <div class="days-hours">
+                        <p>Sunday</p>
+                        <p>9am - 11pm</p>
+                    </div>
+                    <hr id="open-hours-hr">
+                </div>
+            </section>
+            <div class="all-rights">
+                <p>CODED HUGO MENDONÇA - DESIGN © PROGRESSION STUDIOS.</p>
+            </div>
+        </footer>
+        <script src="view/LuxuryController.js"></script>
+        <script src="models/User.js"></script>
+        <script src="index.js"></script>
+    </body>

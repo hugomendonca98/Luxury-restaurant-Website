@@ -1,0 +1,1 @@
+let luxuryController = new LuxuryController();
