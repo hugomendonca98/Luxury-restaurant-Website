@@ -1,0 +1,1530 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "sintony";
+  src: url(../fonts/sintony/Sintony-Regular.otf) format("otf");
+
+  font-family: "play-display";
+  src: url(../fonts/playfair-display/PlayfairDisplay-Regular.otf) format("otf");
+}
+
+/* # Menu padrão para todas as paginas */
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 25px 30px 25px 30px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: #2c465a;
+  font-family: "sintony";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.menu > li > a:hover {
+  color: #fea100;
+  transition: 0.3s;
+}
+
+#active {
+  color: #fea100;
+}
+
+.menu > li {
+  margin-left: 20px;
+}
+
+.menu-bar > label {
+  color: #2c465a;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-bar > label:hover {
+  transition: 0.5s;
+  color: #f8b33b;
+}
+
+.btn-menu {
+  width: 160px;
+  height: 34px;
+  text-align: center;
+  background-color: #fea100;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.btn-menu > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "sintony";
+  font-weight: 600;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.btn-menu > a:hover {
+  background-color: #f8b33b;
+}
+
+.btn-menu > a > i {
+  padding-right: 5px;
+}
+
+/*############################################################*/
+
+/* Slide - Banner */
+
+.slide {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.banner {
+  background-color: #2d2d22 !important;
+  background-image: url(../img/slide-bg.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#food-img,
+#food-img2 {
+  width: 500px;
+  height: 470px;
+  margin-top: 30px;
+}
+
+#food-img2 {
+  display: none;
+}
+
+.arrow-slide,
+.arrow-slide2 {
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.arrow-slide {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.arrow-slide2 {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.arrow-slide:hover,
+.arrow-slide2:hover {
+  opacity: 0.8;
+}
+
+.text-slide {
+  display: flex;
+  font-family: "play-display";
+  color: white;
+}
+
+.content-slide > h1,
+.content-slide2 > h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content-slide,
+.content-slide2 {
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+.text-slide > p,
+.content-slide2 > p {
+  font-size: 37px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+#white-text {
+  margin-right: 6px;
+}
+
+#orange-text {
+  color: #fea100;
+}
+
+#explore-menu {
+  text-decoration: none;
+  background-color: #fea100;
+  color: white;
+  font-family: "sintony";
+  font-weight: 600;
+  font-size: 1.5vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+}
+
+#explore-menu:hover {
+  background-color: white;
+  color: #2c465a;
+  transition: 1s;
+}
+
+/*############################################################*/
+
+/* Seção Horarios de Funcionamento */
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  border-top: solid 1px #e4e4e4 !important;
+}
+
+.hours > img {
+  width: 300px;
+  height: 246px;
+}
+
+.hours > h1 {
+  font-family: "play-display";
+  font-size: 30px;
+  color: #14141d;
+  padding-top: 80px;
+}
+
+.Monday-to-Friday,
+.Saturday-to-Sunday {
+  padding-top: 80px;
+}
+
+.Monday-to-Friday > h2,
+.Saturday-to-Sunday > h2 {
+  font-family: "play-display-italic";
+  font-style: italic;
+  color: #868a8d;
+  font-weight: 100;
+}
+
+.Monday-to-Friday > p,
+.Saturday-to-Sunday > p {
+  font-family: "play-display";
+  font-size: 25px;
+  font-weight: 600;
+  color: #fea100;
+}
+
+/*############################################################*/
+
+/* Titulo da Pagina e background de fundo */
+
+.page-title {
+  background-image: url(../img/page-title.jpg);
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "play-display";
+  font-size: 25px;
+}
+
+.page-title h1:before {
+  content: "";
+  display: inline-block;
+  background: url(../img/page-title-icon-left.png) center center no-repeat;
+  height: 24px;
+  width: 50px;
+  position: relative;
+  margin: 0px 10px;
+  bottom: 7px;
+}
+
+.page-title h1:after {
+  content: "";
+  display: inline-block;
+  background: url(../img/page-title-icon-right.png) center center no-repeat;
+  height: 24px;
+  width: 50px;
+  position: relative;
+  margin: 0px 10px;
+  bottom: 7px;
+}
+
+/*##########################################*/
+
+/* # Footer padrão para todas as paginas */
+
+footer {
+  background-color: #373844;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: auto;
+  margin-top: 90px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.colum-1 > h1,
+.colum-2 > h1,
+.colum-3 > h1 {
+  font-family: "play-display";
+  color: white;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.colum-1 > p > a,
+.colum-2 > p,
+.colum-3 > p {
+  font-family: "sintony";
+  line-height: 1.8;
+  color: #adb2b7;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.colum-2 > p {
+  margin-bottom: 10px;
+}
+
+.email {
+  background: transparent;
+  border-radius: 3px;
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  color: #adb2b7;
+  border: 2px solid #52535e;
+}
+
+#email:focus {
+  border: 2px solid #fea100;
+  transition: 0.7s;
+}
+
+#email:focus,
+input:focus,
+select:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#btn-email {
+  background-color: #fea100;
+  border: none;
+  color: white;
+  padding: 16px;
+  border-radius: 3px;
+  font-family: "sintony";
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-email:disabled {
+  background-color: darkgray;
+  opacity: 0.5;
+}
+
+#btn-email:disabled:hover {
+  opacity: 0.5;
+}
+
+#btn-email:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+}
+
+.btn-social > a > .fa-facebook-f,
+.btn-social > a > .fa-twitter,
+.btn-social > a > .fa-whatsapp,
+.btn-social > a > .fa-instagram {
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#facebook-btn,
+#twitter-btn,
+#whatsapp-btn,
+#instagram-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 7px;
+  margin-top: 25px;
+}
+
+#facebook-btn {
+  background-color: #3b5998;
+}
+
+#twitter-btn {
+  background-color: #55acee;
+}
+
+#whatsapp-btn {
+  background-color: #34af23;
+}
+
+#instagram-btn {
+  background-color: #3f729b;
+}
+
+#facebook-btn:hover,
+#twitter-btn:hover,
+#whatsapp-btn:hover,
+#instagram-btn:hover {
+  opacity: 0.8;
+  transition: 0.7s;
+}
+.colum-1 {
+  width: 350px;
+}
+
+.colum-2 {
+  width: 400px;
+  margin: auto;
+  margin-top: 0;
+}
+
+.colum-3 {
+  color: #adb2b7;
+  font-family: "sintony";
+  font-size: 14px;
+  width: 400px;
+}
+
+.days-hours {
+  display: flex;
+  justify-content: space-between;
+}
+
+#open-hours-hr {
+  border: 1px dotted #52535e;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.all-rights {
+  text-align: center;
+  color: #adb2b7;
+  padding-bottom: 40px;
+}
+
+.input-error {
+  border: solid 1px #ff1919 !important;
+}
+
+#email-sucess,
+#email-error {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: "sintony";
+  display: none;
+}
+
+.fa-check-circle {
+  color: greenyellow;
+}
+
+.fa-exclamation-circle {
+  color: #ff1919;
+}
+
+/*############################################################*/
+
+/* # Barra de Contato */
+
+.contact-bar {
+  height: 100px;
+  background-color: #edf1f3;
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+  padding-left: 55px;
+  align-items: center;
+  color: #14141d;
+}
+
+.barra {
+  background-color: #edf1f3;
+  border-bottom: solid rgb(211, 209, 209) 1px;
+}
+
+.go-coments {
+  display: flex;
+  font-family: "sintony";
+  font-size: 17px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.go-coments > div > p {
+  margin-left: 10px;
+}
+
+.fa-comments {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#btn-arrow-right {
+  background-color: #fea100;
+  padding: 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+#btn-arrow-right > .fa-arrow-right {
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #14141d;
+}
+
+#pipe {
+  font-size: 30px;
+  color: rgb(214, 213, 213);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.call {
+  font-family: "sintony";
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.fa-phone-volume {
+  font-size: 40px;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+/*############################################################*/
+
+/* # Seção sobre o restaurant */
+
+#about-restaurant {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+  color: #14141d;
+}
+
+.about-home-text > p {
+  width: 500px;
+  font-family: "sintony";
+  color: #5c6369;
+  font-size: 14px;
+  line-height: 2;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.about-home-text > h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#btn-orange {
+  color: white;
+  background-color: #fea100;
+  text-decoration: none;
+  font-family: "sintony";
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+/*############################################################*/
+
+/* Seção especial do dia */
+
+#todays-special {
+  background-image: url(../img/pizza-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+#todays-special > h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+
+.specials-foods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-food-text {
+  width: 569px;
+  margin-top: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: white;
+  -webkit-box-shadow: -4px 3px 36px -15px rgba(143, 143, 143, 1);
+  -moz-box-shadow: -4px 3px 36px -15px rgba(143, 143, 143, 1);
+  box-shadow: -4px 3px 36px -15px rgba(143, 143, 143, 1);
+  border-bottom: 0.5px solid #e7e7e7;
+}
+
+.special-food-text > img {
+  width: 569px;
+}
+
+.food-text {
+  padding: 20px;
+}
+
+.food-text > h1 {
+  font-family: "sintony";
+  font-size: 17px;
+  color: #14141d;
+  margin-bottom: 10px;
+}
+
+.food-text > p {
+  font-family: "sintony";
+  font-size: 14px;
+  color: #5c6369;
+}
+
+#special-food-line {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  border: solid 0.5px #e7e7e7;
+}
+
+#price {
+  font-family: "play-display";
+  font-weight: 600;
+  color: #fea100;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/*############################################################*/
+
+/* Cardapio com alguns pratos */
+
+#food-menu {
+  width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#food-menu > h1 {
+  text-align: center;
+  font-family: "play-display";
+  font-weight: 600;
+  font-size: 35px;
+  color: #14141d;
+}
+
+#food-menu-hr {
+  width: 97%;
+  border: dotted 0.5px #c7c7c7;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.row-food {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  border-bottom: dotted 0.5px #c7c7c7;
+}
+
+.food-item-img > img {
+  width: 90px;
+  height: 63px;
+}
+
+.food-item-text > h2 {
+  font-family: "play-display";
+  font-size: 17px;
+  margin-left: 20px;
+  color: #14141d;
+}
+
+.food-item-text > p {
+  font-family: "sintony";
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: #5c6369;
+}
+
+.price-item > p {
+  font-family: "play-display";
+  color: #fea100;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 120px;
+}
+
+.full-menu-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*############################################################*/
+
+/* Seção Clientes Felizes */
+
+#happy-clients {
+  background-image: url(../img/quote-bg.jpg);
+  background-repeat: no-repeat;
+  margin-top: 90px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.client-review {
+  width: 1200px;
+  margin: auto;
+}
+
+.client-review > h1 {
+  font-family: "play-display";
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.client-review > h2 {
+  font-family: "sintony";
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.client-review > p {
+  color: white;
+  font-family: "sintony";
+  font-size: 14px;
+  line-height: 2;
+  padding-bottom: 25px;
+}
+
+#client-img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border: solid white 3px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 15px 3px 16px -15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 15px 3px 16px -15px rgba(0, 0, 0, 1);
+  box-shadow: 15px 3px 16px -15px rgba(0, 0, 0, 1);
+}
+
+/*############################################################*/
+
+/* # Animações do slide. */
+
+@-webkit-keyframes soft-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.soft-load {
+  -webkit-animation: soft-load 0.1s;
+  animation: soft-load 0.1s;
+}
+
+@-webkit-keyframes soft-close {
+  0% {
+    opacity: 1 !important;
+  }
+  100% {
+    opacity: 0 !important;
+  }
+}
+
+.soft-close {
+  -webkit-animation: soft-close 1s;
+  animation: soft-close 1s;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/*############################################################*/
+
+/* texto da pagina para reservas */
+
+.reservation-text {
+  width: 750px;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.reservation-text > h1 {
+  font-family: "play-display";
+  font-size: 35px;
+  color: #14141d;
+}
+
+.reservation-text > p {
+  font-family: "sintony";
+  font-size: 14px;
+  color: #5c6369;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+/*##########################################*/
+
+/* formulario para reservar lugar no estabelicimento */
+
+.form-reservation {
+  width: 1200px;
+  margin: auto;
+}
+
+#special-requeriments {
+  width: 1178px;
+  border: 1px solid #c7d1d6;
+  background: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  height: 100px;
+  text-align: start top;
+}
+
+.row-form-reservation > input {
+  width: 565px;
+  border: 1px solid #c7d1d6;
+  border-radius: 3px;
+  background: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.row-form-reservation > input:focus,
+#special-requeriments:focus {
+  border: solid 1px #fea100;
+}
+
+.row-form-reservation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+#enviar-reserva {
+  color: white;
+  background-color: #fea100;
+  text-decoration: none;
+  font-family: "sintony";
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+#enviar-reserva:focus,
+#send-contact:focus,
+#btn-orange:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#reservation {
+  margin-bottom: 70px;
+}
+
+#errormsg {
+  font-family: "sintony";
+  font-size: 14px;
+  padding: 10px;
+  border: solid 2px #f8b33b;
+  color: #5c6369;
+  margin-top: 20px;
+  display: none;
+}
+
+.contact-messege > #errormsg,
+.contact-messege > #successmsg {
+  width: 500px;
+}
+
+#successmsg {
+  font-family: "sintony";
+  font-size: 14px;
+  padding: 10px;
+  border: solid 2px #34af23;
+  color: #5c6369;
+  margin-top: 20px;
+  display: none;
+}
+
+/*##########################################*/
+
+/* reservas especiais, página de reservas*/
+
+#special-reservations {
+  text-align: center;
+  background-image: url(../img/grey-bg.png);
+  padding-top: 80px;
+  padding-bottom: 55px;
+}
+
+#special-reservations > h1 {
+  font-family: "play-display";
+  font-size: 40px;
+  color: #14141d;
+  font-weight: 600;
+}
+
+.cards-special-reservations {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.card-special-reservations-1,
+.card-special-reservations-2,
+.card-special-reservations-3 {
+  width: 400px;
+  background: white;
+  text-align: justify;
+}
+
+.card-special-reservations-2 {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  padding-top: 80px;
+  background-image: url(../img/reservations-image.jpg);
+  color: white;
+}
+
+.card-special-reservations-2 > .fa-phone-volume {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card-special-reservations-2 > h2 {
+  font-family: "play-display";
+  margin-bottom: 5px;
+}
+
+.card-special-reservations-2 > p {
+  font-family: "sintony";
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.card-special-reservations-2 > .fa-envelope {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-card-special {
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+}
+
+.text-card-special > h2 {
+  font-family: "play-display";
+  color: #14141d;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 2;
+}
+
+.text-card-special > p {
+  font-family: "sintony";
+  color: #5c6369;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/*##########################################*/
+/*Shopping food page*/
+
+.content-pro {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+
+.width-content-pro {
+  width: 70%;
+  margin: auto;
+}
+
+.sedibar {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: "sontony";
+  font-weight: 600;
+}
+
+.row-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "sintony";
+  margin-bottom: 10px;
+}
+
+.row-sort > label {
+  color: #2c465a;
+  font-size: 14px;
+}
+
+#select {
+  color: #373844;
+  font-size: 12px;
+  padding: 10px;
+  background: url("../img/sort-down.png") no-repeat center rgb(255, 255, 255);
+  border: solid 1px darkgray;
+  -webkit-appearance: none;
+  appearance: none;
+  background-position-x: 130px;
+}
+
+.shop-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.item-shop {
+  text-align: center;
+  font-family: "play-display";
+  border: solid 1px #e8edef;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  width: 270px;
+}
+
+.item-shop > a > img {
+  width: 100%;
+  height: 58%;
+}
+
+.item-shop > a {
+  text-decoration: none;
+  color: #14141d;
+  font-weight: 600;
+}
+
+.item-shop > p > a {
+  text-decoration: none;
+  color: #14141d;
+  font-weight: 600;
+  font-family: "play-display";
+  font-size: 20px;
+}
+
+.item-shop > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-shop > #btn-orange {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#price-item {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#price-item > a {
+  text-decoration: none;
+  font-family: "play-display";
+  color: #14141d;
+  font-weight: 600;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-buttons > a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: #fea100;
+}
+
+.img-cart-item {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.total-cart {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "play-display";
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.products-quantity,
+.products-in-cart {
+  color: #929292;
+  font-weight: normal;
+}
+
+.sedibar > ul {
+  list-style: none;
+}
+
+.sedibar > h2 {
+  margin-bottom: 10px;
+}
+
+.shopping-cart-list > li {
+  padding: 10px;
+  border-bottom: dotted #d1d0d0 1px;
+  display: flex;
+  align-items: center;
+}
+
+/*#########################################################*/
+/*speciality page*/
+
+#speciality {
+  margin: auto;
+}
+
+.special {
+  display: flex;
+  align-items: center;
+}
+
+.bg-speciality {
+  background-image: url("../img/about-us-image.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 770px;
+  height: 665px;
+  margin-right: 30px;
+}
+
+.speciality-text > h1 {
+  font-family: "play-display";
+  font-size: 35px;
+  color: #14141d;
+}
+
+.speciality-text > p {
+  font-family: "sintony";
+  font-size: 14px;
+  color: #5c6369;
+  margin-right: 10px;
+}
+
+.speciality-text > h4 {
+  font-family: "sintony";
+  font-size: 15px;
+  color: #14141d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*#########################################################*/
+/*about us page*/
+
+#about {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-bottom: solid 1px #e3e3e3;
+  margin-bottom: 100px;
+}
+
+#about > h2 {
+  font-family: "play-display";
+  font-size: 35px;
+  color: #14141d;
+  margin-top: 60px;
+}
+
+#about > p {
+  font-family: "sintony";
+  font-size: 14px;
+  color: #5c6369;
+  line-height: 2;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#about > img {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#our-staff {
+  background-image: url("../img/grey-bg.png");
+  padding-bottom: 100px;
+}
+
+#our-staff > h1 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "play-display";
+  font-size: 40px;
+}
+
+.card-staff {
+  background-color: white;
+  width: 268px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+.img-staff {
+  margin-bottom: 15px;
+}
+
+.text-staff > h4,
+.text-staff > p {
+  font-family: "sintony";
+  color: #14141d;
+  margin-bottom: 10px;
+}
+
+.text-staff > p {
+  font-size: 14px;
+}
+
+.icons-staff {
+  position: absolute;
+  text-align: center;
+  background-color: #fe4c8d;
+  opacity: 0;
+  transition: linear 0.4s;
+  width: 268px;
+  height: 262px;
+}
+
+.opacity-none {
+  opacity: 0.9 !important;
+  transition: 0.4s;
+}
+
+.icons-social-staff {
+  position: absolute;
+  top: 132px;
+  left: 60px;
+}
+
+.icons-social-staff > a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  border: solid white 2px;
+  margin-left: 5px;
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 60px;
+}
+
+.functionaries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+/* ###################################################*/
+/*página de contato*/
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.map > iframe {
+  opacity: 0.8;
+}
+
+.contact {
+  position: absolute;
+  width: 1200px;
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 90px;
+}
+
+.contact-content {
+  display: flex;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+  width: 600px;
+  height: 450px;
+  background-color: #f9f9f9;
+}
+
+.form-text,
+.form {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+.form > h2 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-family: "play-display";
+  text-align: justify;
+}
+
+.form-text {
+  background-color: #fe4c8d;
+  width: 600px;
+  height: 450px;
+  color: #ffffff;
+}
+
+.form-text > h2 {
+  font-size: 35px;
+  font-family: "play-display";
+  margin-bottom: 20px;
+}
+
+.form-text > p {
+  font-family: "play-display";
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.form-text > h4 {
+  font-size: 14px;
+  font-family: "sintony";
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#send-contact {
+  color: white;
+  background-color: #fea100;
+  text-decoration: none;
+  font-family: "sintony";
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.contact-messege > input {
+  width: 300px;
+  border: 1px solid #c7d1d6;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-messege > input:focus {
+  border: 1px solid #f8b33b;
+}
+
+#your-messege {
+  height: 100px;
+  width: 400px;
+}
+
+/*#################################################*/
+/*staff page*/
+
+#staff {
+  padding-top: 100px;
+  text-align: center;
+  background-color: #edf1f3;
+  background-image: url("../img/chef-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+
+#staff > h2 {
+  font-family: "play-display";
+  font-size: 35px;
+  margin-bottom: 40px;
+}

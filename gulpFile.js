@@ -12,10 +12,20 @@ const browserSync = require('browser-sync').create();
 
 
 gulp.task('arqCSS', ()=>{
-    return gulp.src('ccs/style.css')
+    return gulp.src('css/*.css')
         .pipe(uglifycss())
-        .pipe(gulp.dest('./luxury-website-min/ccs'))
+        .pipe(gulp.dest('./luxury-website-min/css'))
 });
+
+gulp.task('fontAwesomeCss', () => {
+    return gulp.src('font-aweasome/fontawesome-free-5.10.2-web/css/all.min.css')
+    .pipe(gulp.dest('./luxury-website-min/font-aweasome/fontawesome-free-5.10.2-web/css/'))
+})
+
+gulp.task('fontAwesomeDist', () => {
+    return gulp.src('font-aweasome/fontawesome-free-5.10.2-web/webfonts/*.*')
+    .pipe(gulp.dest('./luxury-website-min/font-aweasome/fontawesome-free-5.10.2-web/webfonts/'))
+})
 
 gulp.task('arqHTML', ()=>{
     return gulp.src('*.html')
@@ -59,7 +69,7 @@ gulp.task('arqIMG', ()=>{
         .pipe(gulp.dest('./luxury-website-min/img'))
 });
 
-gulp.task('app', ['arqCSS', 'arqHTML', 'arqJS', 'arqIMG'])
+gulp.task('app', ['arqCSS', 'arqHTML', 'arqJS', 'fontAwesomeDist', 'fontAwesomeCss','arqIMG'])
 
 gulp.task('default', ()=>{
 
