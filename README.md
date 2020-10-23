@@ -11,7 +11,7 @@ Para executar o projeto para desenvolvimento:
 
 **Usando o npm :**
 
-    `npm run dev`
+    npm run dev
  
 **usando o Yarn:** 
 
@@ -21,7 +21,7 @@ para executar para a produção:
 
 **Usando o npm :**
 
-    `npm run build`
+    npm run build
  
 **usando o Yarn:** 
 
