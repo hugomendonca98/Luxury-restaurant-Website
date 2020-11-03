@@ -1,6 +1,6 @@
 
 # Luxury Restaurant
-Restaurante Website desenvolvido a partir de um layout PSD, desenvolvido com HTML5, CSS3, JAVASCRIPT orientado a objeto e Gulp.
+Restaurante Website desenvolvido a partir de um layout PSD, desenvolvido com HTML5, CSS3, JAVASCRIPT orientado a objeto.
 
 <br>
 
