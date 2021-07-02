@@ -1,29 +1,45 @@
+<h1 align="center">
+    <img alt="LuxuryRestaurant" src=".github/logo.png" />
+</h1>
 
-# Luxury Restaurant
-Restaurante Website desenvolvido a partir de um layout PSD, desenvolvido com HTML5, CSS3, JAVASCRIPT orientado a objeto.
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<h1 align="center">
+    <img alt="LuxuryRestaurant" src=".github/desktop.png" />
+</h1>
 
 <br>
 
-![Luxury Restaurant image preview](https://i.imgur.com/CxJSls5.png)
-<br>
-<br>
-<br>
-Para executar o projeto para desenvolvimento:
+## 🧪 Tecnologias
 
-**Usando o npm :**
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-    npm run dev
- 
-**usando o Yarn:** 
+- [Javascript](https://github.com/airbnb/javascript)
+- [Gulp](https://github.com/gulpjs/gulp)
 
-    yarn dev
+## 🚀 Como executar
 
-para executar para a produção:
+Clone o projeto e acesse a pasta do mesmo.
 
-**Usando o npm :**
+```bash
+$ git clone https://github.com/hugomendonca98/luxury-restaurant-website.git
+$ cd luxury-restaurant-website
+```
 
-    npm run build
- 
-**usando o Yarn:** 
+Para iniciá-lo, siga os passos abaixo:
+```bash
+# Instalar as dependências
+$ yarn
 
-    yarn build
+# Iniciar o projeto
+$ yarn start
+```
+O app estará disponível no seu browser pelo endereço http://localhost:8080.
+
+## 💻 Projeto
+
+Site de um luxuoso restaurante, com páginas de menu, reservas de mesas entre outras.
