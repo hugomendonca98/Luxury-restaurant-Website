@@ -42,4 +42,4 @@ O app estará disponível no seu browser pelo endereço http://localhost:8080.
 
 ## 💻 Projeto
 
-Site de um luxuoso restaurante, com páginas de menu, reservas de mesas entre outras.
+Site de um luxuoso restaurante, com páginas de menu, reservas de mesas e shop.
